@@ -5,6 +5,10 @@ const withMDX = createMDX();
 
 const nextConfig: NextConfig = {
   transpilePackages: ["geist"],
+   output: "export",
+  reactStrictMode: true,
+   basePath: '/blog',
+  assetPrefix: '/blog/',
 };
 
 export default withMDX(nextConfig);
